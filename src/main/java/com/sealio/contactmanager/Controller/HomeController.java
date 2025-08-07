@@ -16,4 +16,14 @@ public class HomeController {
         model.addAttribute("title", "About - Smart Contact Manager");
         return "about";
     }
+    @GetMapping("/signIn")
+    public String signIn(Model model){
+        model.addAttribute("title", "SignIn - Smart Contact Manager");
+        return "signIn";
+    }
+    @GetMapping("/signUp")
+    public String signUp(Model model){
+        model.addAttribute("title", "SignUp - Smart Contact Manager");
+        return "signUp";
+    }
 }
