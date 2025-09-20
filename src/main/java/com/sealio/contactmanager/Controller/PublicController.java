@@ -13,5 +13,4 @@ public class PublicController {
         return "Ok";
     }
 
-
 }

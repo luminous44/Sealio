@@ -12,20 +12,24 @@ public class HomeController {
         model.addAttribute("title", "Home - Smart Contact Manager");
         return "home";
     }
+
     @GetMapping("/about")
     public String about(Model model){
         model.addAttribute("title", "About - Smart Contact Manager");
         return "about";
     }
+
     @GetMapping("/signIn")
     public String signIn(Model model){
         model.addAttribute("title", "SignIn - Smart Contact Manager");
         return "signIn";
     }
+    
     @GetMapping("/signUp")
     public String signUp(Model model){
         model.addAttribute("title", "SignUp - Smart Contact Manager");
         model.addAttribute("user",new User());
         return "signUp";
     }
+
 }
